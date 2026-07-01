@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页 - 中华传统文化科普馆</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-logo">
+            <img src="../logo/logo.jpg" alt="网站logo" style="height:37px;margin-right:8px;vertical-align:middle;">中华传统文化馆
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html" class="active">首页</a>
+            <a href="heritage.html">非遗文化</a>
+            <a href="festival.html">传统节日</a>
+            <a href="quintessence.html">经典国粹</a>
+            <a href="stories.html">国风故事</a>
+            <a href="goods.html">文创鉴赏</a>
+            <a href="interactive.html">互动学习</a>
+        </nav>
+		<div class="login-btn-box">
+		  <button id="openLogin">登录 / 注册</button>
+		</div>
+    </header>
+    <main class="container">
+         <div class="banner-box fade-in">
+               <div class="banner-list">
+                 <div class="banner-item" style="background: url(../zhaopian/downloaded-image1.jpg) no-repeat 15% center; background-size: cover;">
+                   <div class="banner-text">
+                     <h1>中华传统文化</h1>
+                     <a href="heritage.html" class="btn-primary">探索文化</a>
+                   </div>
+                 </div>
+                 <div class="banner-item" style="background: url(../zhaopian/downloaded-image2.jpg) no-repeat center; background-size: cover;">
+                   <div class="banner-text">
+                     <h1>匠心非遗技艺</h1>
+                     <a href="heritage.html" class="btn-primary">立即查看</a>
+                   </div>
+                 </div>
+				 <div class="banner-item" style="background: url(../zhaopian/downloaded-image.jpg) no-repeat center; background-size: cover;">
+				    <div class="banner-text">
+				         <h1>翰墨丹青国粹</h1>
+				            <a href="quintessence.html" class="btn-primary">走进书画</a>
+				         </div>
+				        </div>
+				    </div>
+				     <div class="prev">&lt;</div>
+				    <div class="next">&gt;</div>
+				     <div class="dots">
+				        <span class="dot active"></span>
+				        <span class="dot"></span>
+				     <span class="dot"></span>
+				    </div>
+				</div>
+
+        <div class="page-header fade-in">
+            <h2>热门科普板块</h2>
+            <p>网站汇集非遗技艺、岁时节令、传统书画戏曲等丰富内容，面向大学生与年轻国风爱好者。无论是课程论文、社团活动素材，还是课余兴趣阅读，都能在这里找到详实完整的科普资料。</p>
+        </div>
+        <div class="entry-cards">
+            <a href="heritage.html" class="entry-card card-hover fade-in">
+                <span class="entry-icon">🏺</span>
+                <h3>非遗文化</h3>
+                <p>收录剪纸、刺绣、陶瓷、戏曲等多项非遗项目，详细记录技艺起源、制作流程与当代传承现状，文字资料详实，非常适合课题调研与手工课作业。</p>
+            </a>
+            <a href="festival.html" class="entry-card card-hover fade-in">
+                <span class="entry-icon">🏮</span>
+                <h3>传统节日</h3>
+                <p>完整梳理春节、端午、中秋、重阳四大节日的历史演变、民间习俗与神话典故，同时配套校园社团手工活动方案，内容全面，可读性更强。</p>
+            </a>
+            <a href="quintessence.html" class="entry-card card-hover fade-in">
+                <span class="entry-icon">🖌️</span>
+                <h3>经典国粹</h3>
+                <p>深度讲解书法、国画、京剧三大国粹艺术，梳理艺术发展脉络、风格特点，还附带零基础入门练习方法，内容丰富，兼顾科普与实操。</p>
+            </a>
+            <a href="interactive.html" class="entry-card card-hover fade-in">
+                <span class="entry-icon">📚</span>
+                <h3>互动学习</h3>
+                <p>划分中小学、大学两套知识题库，闯关答题可获取电子实践证书，同时开放学生留言交流区，满足大家作业求助、文创交流的需求。</p>
+            </a>
+        </div>
+
+        <div class="daily-tip fade-in" id="dailyTip">
+            <h3>📜 每日文化小知识</h3>
+            <p>「文房四宝」特指湖笔、徽墨、宣纸与端砚。这套文具体系在唐宋时期正式定型，陪伴历代文人创作书画作品。除了器物本身，千百年来还诞生了大量文人雅趣故事，也是传统文化中趣味十足的一部分。</p>
+        </div>
+    </main>
+
+    <div class="back-top" id="backTop">↑</div>
+    <footer class="footer">
+        <p>中华传统文化科普馆 | 传承文明 弘扬国粹</p>
+    </footer>
+	<!-- 登录弹窗无任何修改 -->
+	<div class="login-mask" id="loginMask">
+	  <div class="login-window">
+	    <span class="close" id="closeLogin">×</span>
+	    <h3>文化网站用户登录</h3>
+	    <div class="tab-box">
+	      <span class="tab active" data-type="login">登录</span>
+	      <span class="tab" data-type="reg">注册</span>
+	    </div>
+	    <form id="loginForm" class="form login-form">
+	      <input type="text" name="username" placeholder="用户名" required>
+	      <input type="password" name="password" placeholder="密码" required>
+	      <button type="submit">登录</button>
+	    </form>
+	    <form id="regForm" class="form reg-form">
+	      <input type="text" name="username" placeholder="设置用户名" required>
+	      <input type="password" name="password" placeholder="设置密码" required>
+	      <button type="submit">注册</button>
+	    </form>
+	  </div>
+	</div>
+    <script src="../js/main.js"></script>
+	<script src="../js/mouse-effect.js"></script>
+</body>
+</html>

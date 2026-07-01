@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互动学习 - 中华传统文化科普馆</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-logo">
+            <img src="../logo/logo.jpg" alt="网站logo" style="height:37px;margin-right:8px;vertical-align:middle;">中华传统文化馆
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html">首页</a>
+            <a href="heritage.html">非遗文化</a>
+            <a href="festival.html">传统节日</a>
+            <a href="quintessence.html">经典国粹</a>
+            <a href="stories.html">国风故事</a>
+            <a href="goods.html">文创鉴赏</a>
+            <a href="interactive.html" class="active">互动学习</a>
+        </nav>
+		<div class="login-btn-box">
+		  <button id="openLogin">登录 / 注册</button>
+		</div>
+    </header>
+
+    <main class="container">
+        <div class="page-header fade-in">
+            <h2>互动学习中心</h2>
+            <p>分级知识题库、闯关测评、学生交流社区。答题完成可以获取电子版实践证明，满足大学生综合素质测评的实践材料需求。</p>
+        </div>
+
+        <div class="quiz-box card-hover fade-in">
+            <h3 class="quiz-title">📝 传统文化闯关答题</h3>
+            <div class="quiz-item">
+                <p class="quiz-question">1. 文房四宝包含笔、墨、纸、砚，下列哪一项不属于文房四宝？</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q1" value="A">湖笔</label>
+                    <label><input type="radio" name="q1" value="B">算盘</label>
+                    <label><input type="radio" name="q1" value="C">宣纸</label>
+                </div>
+            </div>
+            <div class="quiz-item">
+                <p class="quiz-question">2. 端午节最早的文化原型是哪一项？</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q2" value="A">上古祭龙祭祀</label>
+                    <label><input type="radio" name="q2" value="B">纪念屈原</label>
+                    <label><input type="radio" name="q2" value="C">秋收庆典</label>
+                </div>
+            </div>
+            <div class="quiz-item">
+                <p class="quiz-question">3. 京剧脸谱中红色代表人物性格是？</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q3" value="A">奸诈狡猾</label>
+                    <label><input type="radio" name="q3" value="B">忠诚刚正</label>
+                    <label><input type="radio" name="q3" value="C">暴躁蛮横</label>
+                </div>
+            </div>
+            <div class="quiz-item">
+                <p class="quiz-question">4.中秋节最初的习俗起源于哪一项活动？</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q4" value="A">秋夕祭月</label>
+                    <label><input type="radio" name="q4" value="B">赏月吃饼</label>
+                    <label><input type="radio" name="q4" value="C">文人饮酒</label>
+                </div>
+            </div>
+            <div class="quiz-item">
+                <p class="quiz-question">5.苏绣是我国四大名绣之一，它的发源地是？</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q5" value="A">苏州</label>
+                    <label><input type="radio" name="q5" value="B">长沙</label>
+                    <label><input type="radio" name="q5" value="C">成都</label>
+                </div>
+            </div>
+
+            <button class="btn-primary" id="submitQuiz" style="width:100%;margin-top:1rem;">提交答卷 闯关评级</button>
+
+            <div class="quiz-result" id="quizResult" style="display:none;">
+                <p class="score-text">你的得分：<span id="scoreNum">0</span>/5</p>
+                <p id="resultTip"></p>
+                <p style="margin-top:1rem;color:var(--gold);">✅ 满分通关可下载传统文化学习实践电子证书，可用于综测实践加分。</p>
+            </div>
+        </div>
+
+        <div class="message-board card-hover fade-in">
+            <h3 style="color:var(--vermilion);margin-bottom:1.5rem;">💬 学生交流社区</h3>
+            <p style="margin-bottom:1rem;color:#555;">本留言板块专门划分为三大交流分区，大家可以在这里交流作业写作素材、手工文创心得，也可以分享传统文化学习感悟。只有登录账号才可以发布留言，共同打造青年国风交流社群。</p>
+            <textarea id="messageInput" rows="4" placeholder="登录后发布你的作业求助、文创分享、学习心得……"></textarea>
+            <button class="btn-primary" id="submitMsg">发布留言</button>
+            <div id="msgList" style="margin-top:2rem;"></div>
+        </div>
+
+        <div class="album-board card-hover fade-in" style="margin-top:3rem;padding:2rem;">
+            <h3 style="color:var(--vermilion);margin-bottom:1rem;">📸 学生国风作品展示墙</h3>
+            <p style="color:#666;">后续开放作品上传功能，登录用户可以上传自己的书法习作、国画小品、剪纸手工、节日实拍照片。优秀作品将会在网站公开展示，既可以作为社团成果材料，也可以作为综合素质实践档案内容，打造属于青年爱好者的国风展示平台。</p>
+        </div>
+    </main>
+
+    <div class="back-top" id="backTop">↑</div>
+    <footer class="footer">
+        <p>中华传统文化科普馆 | 传承文明 弘扬国粹</p>
+    </footer>
+	<div class="login-mask" id="loginMask">
+	  <div class="login-window">
+	    <span class="close" id="closeLogin">×</span>
+	    <h3>文化网站用户登录</h3>
+	    <div class="tab-box">
+	      <span class="tab active" data-type="login">登录</span>
+	      <span class="tab" data-type="reg">注册</span>
+	    </div>
+	    <form id="loginForm" class="form login-form">
+	      <input type="text" name="username" placeholder="用户名" required>
+	      <input type="password" name="password" placeholder="密码" required>
+	      <button type="submit">登录</button>
+	    </form>
+	    <form id="regForm" class="form reg-form">
+	      <input type="text" name="username" placeholder="设置用户名" required>
+	      <input type="password" name="password" placeholder="设置密码" required>
+	      <button type="submit">注册</button>
+	    </form>
+	  </div>
+	</div>
+    <script src="../js/main.js"></script>
+	<script src="../js/mouse-effect.js"></script>
+</body>
+</html>

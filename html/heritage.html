@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>非遗文化 - 中华传统文化科普馆</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-logo">
+            <img src="../logo/logo.jpg" alt="网站logo" style="height:37px;margin-right:8px;vertical-align:middle;">中华传统文化馆
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html">首页</a>
+            <a href="heritage.html" class="active">非遗文化</a>
+            <a href="festival.html">传统节日</a>
+            <a href="quintessence.html">经典国粹</a>
+            <a href="stories.html">国风故事</a>
+            <a href="goods.html">文创鉴赏</a>
+            <a href="interactive.html">互动学习</a>
+        </nav>
+		<div class="login-btn-box">
+		  <button id="openLogin">登录 / 注册</button>
+		</div>
+    </header>
+
+    <main class="container">
+        <div class="page-header fade-in">
+            <h2>非物质文化遗产</h2>
+            <p>传承千年匠心，守护文化根脉。每一项技艺都历经代代匠人打磨，保留着最原汁原味的东方手工美学，是学生研学、课题写作的优质资料。</p>
+        </div>
+
+        <div class="filter-group fade-in">
+            <button class="filter-btn active" data-type="all">全部</button>
+            <button class="filter-btn" data-type="skill">传统技艺</button>
+            <button class="filter-btn" data-type="opera">戏曲曲艺</button>
+            <button class="filter-btn" data-type="folk">民俗活动</button>
+        </div>
+
+        <div class="heritage-list" id="heritageList">
+            <div class="heritage-card card-hover fade-in" data-category="skill">
+                <img src="../zhaopian/0207aceb3f594d16bef85ce7ddec67cd.png" style="width:100%;height:160px;border-radius:10px;margin-bottom:12px;">
+                <div class="card-icon">🪡</div>
+                <h3>苏绣</h3>
+                <p>苏绣起源于苏州，拥有两千多年历史，在明清两代达到鼎盛。针法多达四十余种，针脚细密平整，色彩层次丰富。从花鸟小品到人物肖像都可以完美呈现。时至今日，苏绣不断融合现代美术设计，实现非遗技艺的创新传承，是手工艺术类作业非常经典的选题。</p>
+                <span class="card-tag">适合手工课作业</span>
+            </div>
+            <div class="heritage-card card-hover fade-in" data-category="skill">
+                <img src="../zhaopian/d7287e9b031a44849a110190e85283e6.jpeg" style="width:100%;height:160px;border-radius:10px;margin-bottom:12px;">
+                <div class="card-icon">🏺</div>
+                <h3>景德镇陶瓷</h3>
+                <p>景德镇自古被誉为千年瓷都，烧制技艺历经上千年不断完善。瓷器质地白如玉、明如镜、薄如纸、声如磬。从制坯、绘画到入窑烧制，整套工序繁复严谨。陶瓷文化不仅是古代手工业的顶峰，也是大学生传统文化研学实践的热门项目。</p>
+                <span class="card-tag">大学生研学素材</span>
+            </div>
+            <div class="heritage-card card-hover fade-in" data-category="opera">
+                <img src="../zhaopian/158e130f777f4325afa7122972d4d4f3.png" style="width:100%;height:160px;border-radius:10px;margin-bottom:12px;">
+                <div class="card-icon">🎭</div>
+                <h3>京剧</h3>
+                <p>京剧被称作国粹，形成于清代，融合了多个地方戏曲的精华。讲究唱、念、做、打四门基本功，划分生、旦、净、丑四大行当。五颜六色的脸谱对应人物性格，程式化的舞台表演极具东方艺术美感，适合艺术赏析类课程作业。</p>
+                <span class="card-tag">艺术赏析作业</span>
+            </div>
+            <div class="heritage-card card-hover fade-in" data-category="opera">
+                <img src="../zhaopian/ba5876e02fe74ff9ba106bbde7ee3295.jpg" style="width:100%;height:160px;border-radius:10px;margin-bottom:12px;">
+                <div class="card-icon">🪕</div>
+                <h3>苏州评弹</h3>
+                <p>苏州评弹是江南代表性曲艺，只用琵琶与三弦伴奏，配合吴侬软语娓娓讲述故事。唱腔婉转柔和，叙事细腻生动。评弹保留了大量江南民间故事与市井文化，是研究江南民俗文化不可或缺的内容。</p>
+                <span class="card-tag">民俗科普素材</span>
+            </div>
+            <div class="heritage-card card-hover fade-in" data-category="folk">
+                <img src="../zhaopian/4c5b6758f210458382e7b2344a207166.png" style="width:100%;height:160px;border-radius:10px;margin-bottom:12px;">
+                <div class="card-icon">🐉</div>
+                <h3>端午赛龙舟</h3>
+                <p>赛龙舟是流传千年的集体民俗活动。最初用于祭祀龙神，后来逐渐和纪念屈原的传说结合。众人合力划桨，讲究团结协作，既是节日仪式，也是极具凝聚力的集体活动，很适合高校社团开展团建活动。</p>
+                <span class="card-tag">节日活动参考</span>
+            </div>
+            <div class="heritage-card card-hover fade-in" data-category="folk">
+                <img src="../zhaopian/af87b17cbc114c4fbf3039805e45e20c.jpg" style="width:100%;height:160px;border-radius:10px;margin-bottom:12px;">
+                <div class="card-icon">🏮</div>
+                <h3>元宵灯会</h3>
+                <p>元宵节灯会是古代最热闹的市井狂欢。在古时，女子平日不能随意出门，唯有元宵可以夜游赏灯、猜灯谜，灯会也成为古人青年男女相遇交友的浪漫场合。灯会民俗完整保留了市井烟火气息。</p>
+                <span class="card-tag">社团活动策划参考</span>
+            </div>
+        </div>
+    </main>
+
+    <div class="back-top" id="backTop">↑</div>
+    <footer class="footer">
+        <p>中华传统文化科普馆 | 传承文明 弘扬国粹</p>
+    </footer>
+	<div class="login-mask" id="loginMask">
+	  <div class="login-window">
+	    <span class="close" id="closeLogin">×</span>
+	    <h3>文化网站用户登录</h3>
+	    <div class="tab-box">
+	      <span class="tab active" data-type="login">登录</span>
+	      <span class="tab" data-type="reg">注册</span>
+	    </div>
+	    <form id="loginForm" class="form login-form">
+	      <input type="text" name="username" placeholder="用户名" required>
+	      <input type="password" name="password" placeholder="密码" required>
+	      <button type="submit">登录</button>
+	    </form>
+	    <form id="regForm" class="form reg-form">
+	      <input type="text" name="username" placeholder="设置用户名" required>
+	      <input type="password" name="password" placeholder="设置密码" required>
+	      <button type="submit">注册</button>
+	    </form>
+	  </div>
+	</div>
+    <script src="../js/main.js"></script>
+	<script src="../js/mouse-effect.js"></script>
+</body>
+</html>
