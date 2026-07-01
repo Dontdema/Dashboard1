@@ -1,5 +1,5 @@
-// ====================const API_BASE = 'http://xiwangwu.pythonanywhere.com';
-const API_BASE = 'https://ancient-bread-5e4a.1684044670.workers.dev';
+const API_BASE = 'http://xiwangwu.pythonanywhere.com';
+
 // ==================== 1. 滚动渐显动画（保留） ====================
 const fadeElements = document.querySelectorAll('.fade-in');
 const observer = new IntersectionObserver((entries) => {
